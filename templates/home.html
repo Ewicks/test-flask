@@ -18,7 +18,11 @@
     <br>
     <table class="table">
       <thead>
-
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">n0.</th>
+          <th scope="col">address</th>
+        </tr>
         {% for element in data %}
         <tr>
           <th scope="col">#</th>
@@ -27,9 +31,26 @@
           <th scope="col">{{element[2]}}</th>
         </tr>
         {% endfor %}
-
       </thead>
     <br>
+</table>
+
+<table class="table" style="width:100%">
+  <thead>
+    <tr>
+      <th scope="col">sdfsdf</th>
+      <th scope="col">sdfsdf</th>
+      <th scope="col">sdfsdf</th>
+    </tr>
+    {% for element in data %}
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">{{element[0]}}</th>
+      <th scope="col">{{element[1]}}</th>
+      <th scope="col">{{element[2]}}</th>
+    </tr>
+    {% endfor %}
+  </thead>
 </table>
 </body>
 
